@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="环氧地坪,运动球场,聚氨酯地坪,塑胶跑道,凯迪欧,江苏迪欧化工,地坪漆厂家">
+<meta name="description" content="江苏迪欧化工科技有限公司，成立于2010年，集环氧地坪、运动球场材料、聚氨酯地坪、高端彩砂地坪、户外地坪、耐磨硬化地坪等产品的研发、生产、销售、施工指导为一体的大型科技生产型企业。">
+<title>凯迪欧 KDO — 专业地坪涂料供应商 | 环氧地坪 · 运动球场 · 聚氨酯地坪</title>
+
+<style>
+/* ===== CSS Variables ===== */
+:root {
+  --bg-primary: #f8f9fb;
+  --bg-secondary: #eef1f5;
+  --bg-card: #ffffff;
+  --bg-elevated: #f0f2f6;
+  --text-primary: #1a1d24;
+  --text-secondary: #5a5f6e;
+  --text-muted: #8b8f9a;
+  --accent: #b8942e;
+  --accent-light: #d4af37;
+  --accent-glow: rgba(184, 148, 46, 0.12);
+  --green: #2d8a5e;
+  --green-glow: rgba(45, 138, 94, 0.10);
+  --border: rgba(0,0,0,0.06);
+  --border-light: rgba(0,0,0,0.10);
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.05);
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.10);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1280px;
+  --nav-height: 72px;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; border: none; outline: none; }
+ul { list-style: none; }
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+/* ===== Typography ===== */
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 3px;
+  color: var(--accent); text-transform: uppercase; margin-bottom: 16px;
+}
+.section-label::before { content:''; width: 24px; height: 1px; background: var(--accent); }
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.3;
+  letter-spacing: -0.02em; margin-bottom: 20px;
+}
+.section-desc { color: var(--text-secondary); font-size: 1.05rem; max-width: 600px; line-height: 1.8; }
+
+/* ===== Glass Effect ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+}
+
+/* ===== Navigation ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: var(--nav-height);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  transition: var(--transition);
+}
+.nav .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.35rem; font-weight: 800; letter-spacing: 1px; }
+.logo-icon {
+  width: 38px; height: 38px; border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--accent), #8b6914);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 900; color: #ffffff;
+}
+.logo-sub { font-size: 0.7rem; font-weight: 500; color: var(--text-muted); letter-spacing: 2px; display: block; line-height: 1; }
+
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a {
+  font-size: 0.88rem; font-weight: 500; color: var(--text-secondary);
+  position: relative; padding: 6px 0; transition: var(--transition);
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+  background: var(--accent); transition: var(--transition); border-radius: 1px;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--text-primary); }
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+.nav-cta {
+  padding: 10px 22px; border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), #a88828);
+  color: #ffffff; transition: var(--transition); letter-spacing: 0.5px;
+}
+.nav-cta:hover { box-shadow: 0 4px 24px var(--accent-glow); transform: translateY(-1px); }
+
+.mobile-toggle { display: none; flex-direction: column; gap: 5px; background: none; padding: 8px; }
+.mobile-toggle span { width: 24px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: var(--transition); }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; position: fixed; top: var(--nav-height); left: 0; right: 0;
+    flex-direction: column; gap: 0; background: rgba(255,255,255,0.98);
+    backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 16px 0; }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 12px 24px; width: 100%; }
+  .nav-links a::after { display: none; }
+  .mobile-toggle { display: flex; }
+}
+
+/* ===== Hero ===== */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; position: relative;
+  padding: calc(var(--nav-height) + 40px) 0 80px; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(184,148,46,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse 60% 50% at 80% 20%, rgba(45,138,94,0.05) 0%, transparent 50%);
+}
+.hero-grid {
+  position: absolute; inset: 0; opacity: 0.06;
+  background-image: linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-glow {
+  position: absolute; width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  top: 10%; left: -200px; filter: blur(80px); animation: float 8s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+.hero .container { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 18px; border-radius: 50px; font-size: 0.82rem; font-weight: 600;
+  background: var(--accent-glow); border: 1px solid rgba(184,148,46,0.25);
+  color: var(--accent-light); margin-bottom: 24px; animation: fadeInUp 0.8s ease;
+}
+.hero-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.hero-title { font-size: clamp(2.5rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 24px; animation: fadeInUp 0.8s 0.1s ease both; }
+.hero-title .highlight { background: linear-gradient(135deg, var(--accent), #f0d878); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.hero-desc { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.9; margin-bottom: 36px; max-width: 520px; animation: fadeInUp 0.8s 0.2s ease both; }
+
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeInUp 0.8s 0.3s ease both; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px;
+  border-radius: 50px; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.5px;
+  transition: var(--transition); position: relative; overflow: hidden;
+}
+.btn-primary { background: linear-gradient(135deg, var(--accent), #a88828); color: #ffffff; }
+.btn-primary:hover { box-shadow: 0 8px 32px var(--accent-glow); transform: translateY(-2px); }
+.btn-outline { background: transparent; border: 1px solid var(--border-light); color: var(--text-primary); }
+.btn-outline:hover { border-color: var(--accent); background: var(--accent-glow); }
+.btn-sm { padding: 10px 22px; font-size: 0.82rem; }
+
+.hero-stats { display: flex; gap: 40px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); animation: fadeInUp 0.8s 0.4s ease both; }
+.hero-stat { text-align: center; }
+.hero-stat .num { font-size: 2rem; font-weight: 900; color: var(--accent); letter-spacing: -0.02em; }
+.hero-stat .label { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+
+.hero-visual {
+  position: relative; animation: fadeInUp 0.8s 0.2s ease both;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-card {
+  width: 100%; max-width: 440px; aspect-ratio: 4/3; border-radius: var(--radius-lg);
+  background: var(--bg-card); border: 1px solid var(--border);
+  position: relative; overflow: hidden; padding: 32px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.hero-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(184,148,46,0.10) 0%, transparent 50%);
+}
+.hero-card-icon { font-size: 2.5rem; margin-bottom: 16px; position: relative; }
+.hero-card-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; position: relative; }
+.hero-card-desc { font-size: 0.88rem; color: var(--text-secondary); position: relative; }
+.hero-card-badge {
+  position: absolute; top: 20px; right: 20px;
+  padding: 6px 14px; border-radius: 50px; font-size: 0.72rem; font-weight: 700;
+  background: var(--accent); color: #ffffff; letter-spacing: 1px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .hero .container { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { order: -1; }
+  .hero-stats { gap: 20px; flex-wrap: wrap; }
+}
+
+/* ===== Sections ===== */
+.section { padding: 100px 0; position: relative; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header .section-label { justify-content: center; }
+.section-header .section-label::after { content:''; width: 24px; height: 1px; background: var(--accent); }
+.section-header .section-desc { margin: 0 auto; }
+
+/* ===== About ===== */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-visual {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden;
+  aspect-ratio: 4/3; background: var(--bg-card); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+}
+.about-visual-inner { text-align: center; padding: 40px; }
+.about-visual-icon { font-size: 5rem; margin-bottom: 16px; opacity: 0.8; }
+.about-visual-text { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+
+.about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.about-feature {
+  padding: 20px; border-radius: var(--radius); background: var(--bg-card);
+  border: 1px solid var(--border); transition: var(--transition);
+}
+.about-feature:hover { border-color: var(--accent); transform: translateY(-2px); }
+.about-feature .icon { font-size: 1.5rem; margin-bottom: 8px; }
+.about-feature .title { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+.about-feature .desc { font-size: 0.8rem; color: var(--text-secondary); }
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Stats Bar ===== */
+.stats-bar {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: var(--border); border-radius: var(--radius-lg); overflow: hidden;
+}
+.stat-item {
+  background: var(--bg-card); padding: 32px 20px; text-align: center;
+  transition: var(--transition);
+}
+.stat-item:hover { background: var(--bg-elevated); }
+.stat-item .num { font-size: 2.4rem; font-weight: 900; color: var(--accent); }
+.stat-item .suffix { font-size: 1.2rem; font-weight: 700; color: var(--accent); }
+.stat-item .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+
+@media (max-width: 700px) {
+  .stats-bar { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== Products ===== */
+.product-tabs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
+.product-tab {
+  padding: 10px 22px; border-radius: 50px; font-size: 0.85rem; font-weight: 600;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-secondary); transition: var(--transition);
+}
+.product-tab:hover { border-color: var(--accent); color: var(--text-primary); }
+.product-tab.active { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.product-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px; transition: var(--transition);
+  position: relative; overflow: hidden; cursor: default;
+}
+.product-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent); opacity: 0; transition: var(--transition);
+}
+.product-card:hover { border-color: var(--border-light); transform: translateY(-4px); box-shadow: var(--shadow); }
+.product-card:hover::before { opacity: 1; }
+.product-card .icon { font-size: 2rem; margin-bottom: 14px; }
+.product-card .name { font-weight: 700; font-size: 1.05rem; margin-bottom: 6px; }
+.product-card .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.product-card .tag {
+  font-size: 0.72rem; padding: 3px 10px; border-radius: 50px;
+  background: var(--bg-elevated); color: var(--text-muted);
+}
+
+/* ===== Cases ===== */
+.case-filters { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
+.case-filter {
+  padding: 8px 20px; border-radius: 50px; font-size: 0.82rem; font-weight: 600;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-secondary); transition: var(--transition);
+}
+.case-filter:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow); }
+.case-filter.active { border-color: var(--accent); color: #ffffff; background: var(--accent); }
+
+.case-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.case-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; transition: var(--transition);
+}
+.case-card:hover { border-color: var(--border-light); transform: translateY(-4px); box-shadow: var(--shadow); }
+.case-thumb {
+  aspect-ratio: 16/10; background: var(--bg-elevated);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; border-bottom: 1px solid var(--border);
+}
+.case-info { padding: 20px; }
+.case-info .title { font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+.case-info .meta { font-size: 0.78rem; color: var(--text-muted); display: flex; gap: 12px; flex-wrap: wrap; }
+.case-info .meta span { display: flex; align-items: center; gap: 4px; }
+
+/* ===== Advantages ===== */
+.adv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.adv-card {
+  padding: 32px 24px; border-radius: var(--radius); background: var(--bg-card);
+  border: 1px solid var(--border); transition: var(--transition); text-align: center;
+}
+.adv-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow); }
+.adv-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+.adv-card .title { font-weight: 700; font-size: 1.1rem; margin-bottom: 8px; }
+.adv-card .desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; }
+
+/* ===== Certifications ===== */
+.cert-scroll {
+  display: flex; gap: 20px; overflow-x: auto; padding: 8px 0;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.cert-scroll::-webkit-scrollbar { height: 4px; }
+.cert-scroll::-webkit-scrollbar-track { background: var(--bg-card); border-radius: 2px; }
+.cert-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+.cert-item {
+  flex: 0 0 auto; scroll-snap-align: start;
+  padding: 20px 28px; border-radius: var(--radius); background: var(--bg-card);
+  border: 1px solid var(--border); text-align: center; min-width: 200px;
+  transition: var(--transition);
+}
+.cert-item:hover { border-color: var(--accent); }
+.cert-item .icon { font-size: 2rem; margin-bottom: 8px; }
+.cert-item .title { font-weight: 700; font-size: 0.9rem; }
+
+/* ===== FAQ ===== */
+.faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { border-radius: var(--radius); background: var(--bg-card); border: 1px solid var(--border); overflow: hidden; transition: var(--transition); }
+.faq-item:hover { border-color: var(--border-light); }
+.faq-q {
+  padding: 20px 24px; display: flex; justify-content: space-between; align-items: center;
+  font-weight: 700; font-size: 0.95rem; cursor: pointer; user-select: none;
+}
+.faq-q .arrow { transition: var(--transition); font-size: 0.8rem; color: var(--accent); }
+.faq-item.open .faq-q .arrow { transform: rotate(45deg); }
+.faq-a { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8; }
+.faq-item.open .faq-a { padding: 0 24px 20px; max-height: 300px; }
+
+/* ===== Contact ===== */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-info { display: flex; flex-direction: column; gap: 20px; }
+.contact-card {
+  padding: 24px; border-radius: var(--radius); background: var(--bg-card);
+  border: 1px solid var(--border); transition: var(--transition);
+}
+.contact-card:hover { border-color: var(--accent); }
+.contact-card .label { font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; color: var(--accent); text-transform: uppercase; margin-bottom: 6px; }
+.contact-card .value { font-size: 1.05rem; font-weight: 600; }
+
+.contact-form {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 32px;
+}
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%; padding: 12px 16px; border-radius: var(--radius-sm);
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  color: var(--text-primary); font-size: 0.9rem; font-family: inherit;
+  transition: var(--transition); resize: vertical;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+@media (max-width: 768px) {
+  .contact-grid, .form-row { grid-template-columns: 1fr; }
+}
+
+/* ===== Footer ===== */
+.footer { border-top: 1px solid var(--border); padding: 48px 0 24px; background: var(--bg-secondary); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 32px; }
+.footer h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; color: var(--accent); }
+.footer a, .footer p { font-size: 0.85rem; color: var(--text-muted); line-height: 2.2; transition: var(--transition); }
+.footer a:hover { color: var(--text-primary); }
+.footer-bottom {
+  border-top: 1px solid var(--border); padding-top: 20px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  font-size: 0.78rem; color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-secondary); font-size: 1.2rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition); visibility: hidden; opacity: 0; pointer-events: none;
+}
+.back-to-top.visible { visibility: visible; opacity: 1; pointer-events: all; }
+.back-to-top:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ===== Animations ===== */
+.reveal { opacity: 0; transform: translateY(30px); transition: var(--transition-slow); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== Map Placeholder ===== */
+.map-area {
+  aspect-ratio: 16/6; border-radius: var(--radius-lg); background: var(--bg-card);
+  border: 1px solid var(--border); display: flex; align-items: center;
+  justify-content: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 16px;
+}
+
+/* ===== Office Cards ===== */
+.office-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 20px; }
+.office-card {
+  padding: 18px 20px; border-radius: var(--radius); background: var(--bg-card);
+  border: 1px solid var(--border); transition: var(--transition);
+}
+.office-card:hover { border-color: var(--accent); }
+.office-card .city { font-weight: 700; margin-bottom: 4px; }
+.office-card .addr { font-size: 0.78rem; color: var(--text-muted); }
+.office-card .tel { font-size: 0.78rem; color: var(--accent); margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="#home" class="logo">
+      <div class="logo-icon">K</div>
+      <div>
+        凯迪欧
+        <span class="logo-sub">KDO CHEMICAL</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">首页</a>
+      <a href="#about">关于我们</a>
+      <a href="#products">产品中心</a>
+      <a href="#cases">工程案例</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact">联系我们</a>
+      <a href="tel:4008898733" class="nav-cta">📞 400-8898-733</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div>
+      <div class="hero-badge"><span class="dot"></span>中国地坪行业品牌 20 强</div>
+      <h1 class="hero-title">
+        让每一寸地面<br><span class="highlight">都经得起考验</span>
+      </h1>
+      <p class="hero-desc">
+        十年匠心专注环保涂料研发，30000+ 项目验证。<br>
+        从万达广场到独库公路，凯迪欧以品质守护脚下每一寸土地。
+      </p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">查看产品线 →</a>
+        <a href="#contact" class="btn btn-outline">获取报价方案</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num" data-count="30000">30,000<span style="font-size:1rem">+</span></div><div class="label">合作项目</div></div>
+        <div class="hero-stat"><div class="num" data-count="5000">5,000<span style="font-size:1rem">+</span></div><div class="label">服务城市</div></div>
+        <div class="hero-stat"><div class="num" data-count="300">300<span style="font-size:1rem">+</span></div><div class="label">出口国家</div></div>
+        <div class="hero-stat"><div class="num" data-count="6">6<span style="font-size:1rem">大</span></div><div class="label">仓储基地</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-badge">KDO 凯迪欧</div>
+        <div class="hero-card-icon">🏭</div>
+        <div class="hero-card-title">3 大现代化生产基地</div>
+        <div class="hero-card-desc">江苏 · 湖北 · 山东，标准化工业厂房，全自动生产设备</div>
+        <div style="margin-top:16px; display:flex; gap:8px; position:relative;">
+          <span style="padding:4px 12px; border-radius:50px; background:var(--green-glow); color:var(--green); font-size:0.72rem; font-weight:700;">绿色环保</span>
+          <span style="padding:4px 12px; border-radius:50px; background:var(--accent-glow); color:var(--accent); font-size:0.72rem; font-weight:700;">高新技术企业</span>
+          <span style="padding:4px 12px; border-radius:50px; background:rgba(100,149,237,0.15); color:#6495ED; font-size:0.72rem; font-weight:700;">进出口资质</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-visual">
+        <div class="about-visual-inner">
+          <div class="about-visual-icon">🧪</div>
+          <div style="font-size:2.5rem;font-weight:900;color:var(--accent);">KDO</div>
+          <div style="color:var(--text-secondary);">江苏迪欧化工科技有限公司</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">成立于 2010 年</div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">关于我们</span>
+        <h2 class="section-title">十五年专注地坪科技</h2>
+        <p class="section-desc">
+          江苏迪欧化工科技有限公司，成立于2010年，是一家集环氧地坪、运动球场材料、聚氨酯地坪、高端彩砂地坪、户外地坪、耐磨硬化地坪、交通道路划线等产品的<strong>研发、生产、销售、施工指导</strong>为一体的大型科技生产型企业。
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon">🏅</div>
+            <div class="title">行业权威认证</div>
+            <div class="desc">中国地坪行业品牌20强、江苏省高新技术企业</div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🌍</div>
+            <div class="title">进出口资质</div>
+            <div class="desc">产品出口全球，拥有完整出口资质</div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🔬</div>
+            <div class="title">研发驱动</div>
+            <div class="desc">专业研发团队，多项产品检测与绿色环保认证</div>
+          </div>
+          <div class="about-feature">
+            <div class="icon">🏗️</div>
+            <div class="title">全产业链覆盖</div>
+            <div class="desc">3大生产基地 · 6大仓储基地 · 6大办事处</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats Bar ===== -->
+<section style="padding:0 0 80px;">
+  <div class="container">
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="num" data-count="33000">33,000<span class="suffix">万</span></div>
+        <div class="label">㎡ 年产量</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="30000">30,000<span class="suffix">+</span></div>
+        <div class="label">合作项目</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="300">300<span class="suffix">+</span></div>
+        <div class="label">出口国家</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="20">20<span class="suffix">+</span></div>
+        <div class="label">行业荣誉</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Products ===== -->
+<section class="section" id="products" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">产品中心</span>
+      <h2 class="section-title">六大产品系列，覆盖全场景地坪需求</h2>
+      <p class="section-desc">从工业厂房到商业地库，从塑胶跑道到户外防滑路面</p>
+    </div>
+
+    <div class="product-tabs reveal" id="productTabs">
+      <button class="product-tab active" data-cat="epoxy">环氧树脂地坪</button>
+      <button class="product-tab" data-cat="sports">运动球场系列</button>
+      <button class="product-tab" data-cat="pu">聚氨酯地坪</button>
+      <button class="product-tab" data-cat="outdoor">室外专用系列</button>
+      <button class="product-tab" data-cat="hardener">耐磨硬化系列</button>
+      <button class="product-tab" data-cat="garage">车库专用系列</button>
+    </div>
+
+    <div class="product-grid reveal" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ===== Cases ===== -->
+<section class="section" id="cases">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">工程案例</span>
+      <h2 class="section-title">标杆项目见证品质</h2>
+      <p class="section-desc">服务万达、保时捷、龙湖等知名客户，案例覆盖全国</p>
+    </div>
+
+    <div class="case-filters reveal" id="caseFilters">
+      <button class="case-filter active" data-cat="all">全部案例</button>
+      <button class="case-filter" data-cat="garage">地下车库</button>
+      <button class="case-filter" data-cat="sports">运动球场</button>
+      <button class="case-filter" data-cat="industrial">工业厂房</button>
+      <button class="case-filter" data-cat="outdoor">户外地坪</button>
+    </div>
+
+    <div class="case-grid reveal" id="caseGrid"></div>
+  </div>
+</section>
+
+<!-- ===== Advantages ===== -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">为什么选择凯迪欧</span>
+      <h2 class="section-title">我们的核心优势</h2>
+    </div>
+    <div class="adv-grid reveal">
+      <div class="adv-card">
+        <div class="icon">🔬</div>
+        <div class="title">自主研发生产</div>
+        <div class="desc">3大现代化生产基地，全自动生产设备，从源头把控品质，年产量超33000万平方米</div>
+      </div>
+      <div class="adv-card">
+        <div class="icon">🌿</div>
+        <div class="title">绿色环保无毒</div>
+        <div class="desc">全新净味配方，分解甲醛等有害物，增加负离子含量，通过国家绿色环保产品认证</div>
+      </div>
+      <div class="adv-card">
+        <div class="icon">⚡</div>
+        <div class="title">全国快速响应</div>
+        <div class="desc">6大仓储基地 + 6大办事处，覆盖华东、华中、西北、华北，48小时快速供货</div>
+      </div>
+      <div class="adv-card">
+        <div class="icon">🎯</div>
+        <div class="title">定制化解决方案</div>
+        <div class="desc">经验丰富的研发团队，根据项目需求提供个性化产品定制与施工方案设计</div>
+      </div>
+      <div class="adv-card">
+        <div class="icon">🛡️</div>
+        <div class="title">多重资质保障</div>
+        <div class="desc">建筑装修二级资质、市政三级资质、安许资质、进出口资质，项目合规无忧</div>
+      </div>
+      <div class="adv-card">
+        <div class="icon">🏅</div>
+        <div class="title">行业权威认可</div>
+        <div class="desc">中国地坪品牌20强、建筑装饰行业品牌10强、江苏优秀地坪施工商十强</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Certifications ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">资质认证</span>
+      <h2 class="section-title">权威认证，品质保障</h2>
+    </div>
+    <div class="cert-scroll reveal" id="certScroll"></div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">常见问题</span>
+      <h2 class="section-title">您关心的，我们都有答案</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">联系我们</span>
+      <h2 class="section-title">获取免费咨询与报价</h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="label">全国免费热线</div>
+          <div class="value" style="font-size:1.4rem;color:var(--accent);">400-8898-733</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">营销总部</div>
+          <div class="value">0519-89187058</div>
+          <div style="font-size:0.82rem;color:var(--text-muted);margin-top:4px;">江苏省常州市新北区太湖西路88号万慧科创园C座401</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">电子邮箱</div>
+          <div class="value">2477873285@qq.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">工作时间</div>
+          <div class="value">周一至周五 8:30 - 17:00<br>周六至周日 9:00 - 17:00</div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>姓名 *</label>
+            <input type="text" placeholder="您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label>电话 *</label>
+            <input type="tel" placeholder="您的联系电话" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>需求类型</label>
+          <select>
+            <option>请选择需求类型</option>
+            <option>环氧地坪</option>
+            <option>运动球场 / 塑胶跑道</option>
+            <option>聚氨酯地坪</option>
+            <option>室外防滑路面</option>
+            <option>耐磨硬化地坪</option>
+            <option>车库地坪</option>
+            <option>其他 / 综合咨询</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>项目面积（㎡）</label>
+          <input type="number" placeholder="大致施工面积" min="1">
+        </div>
+        <div class="form-group">
+          <label>留言</label>
+          <textarea rows="4" placeholder="请描述您的项目需求和想法..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">提交咨询 →</button>
+        <p style="font-size:0.72rem;color:var(--text-muted);text-align:center;margin-top:12px;">我们将在 24 小时内与您联系，您的信息将被严格保密</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Offices ===== -->
+<section class="section" style="padding-top:0;">
+  <div class="container reveal">
+    <h3 style="margin-bottom:16px;">全国服务网络</h3>
+    <div class="office-grid" id="officeGrid"></div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>凯迪欧 KDO</h4>
+        <p style="line-height:1.8;">
+          江苏迪欧化工科技有限公司<br>
+          十五年专注地坪科技<br>
+          让每一寸地面都经得起考验
+        </p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="#about">关于我们</a><br>
+        <a href="#products">产品中心</a><br>
+        <a href="#cases">工程案例</a><br>
+        <a href="#contact">联系我们</a>
+      </div>
+      <div>
+        <h4>产品系列</h4>
+        <a href="#products">环氧树脂地坪</a><br>
+        <a href="#products">运动球场系列</a><br>
+        <a href="#products">聚氨酯地坪</a><br>
+        <a href="#products">耐磨硬化系列</a>
+      </div>
+      <div>
+        <h4>联系方式</h4>
+        <p>📞 400-8898-733</p>
+        <p>📧 2477873285@qq.com</p>
+        <p>📍 江苏省常州市新北区</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 凯迪欧 KDO — 江苏迪欧化工科技有限公司 版权所有</span>
+      <span>苏ICP备17047545号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="返回顶部">↑</button>
+
+<!-- ===== JavaScript ===== -->
+<script>
+// ===== Mobile Nav =====
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+// Close nav on link click
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY + 100;
+  sections.forEach(section => {
+    const id = section.getAttribute('id');
+    const link = navLinks.querySelector(`a[href="#${id}"]`);
+    if (!link) return;
+    if (section.offsetTop <= scrollY && section.offsetTop + section.offsetHeight > scrollY) {
+      navLinks.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+    }
+  });
+});
+
+// ===== Back to Top =====
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 600);
+});
+backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// ===== Reveal on Scroll =====
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+revealElements.forEach(el => revealObserver.observe(el));
+
+// ===== Counter Animation =====
+const countElements = document.querySelectorAll('.num[data-count]');
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const target = parseInt(el.getAttribute('data-count'));
+    const suffix = el.querySelector('.suffix')?.textContent || '';
+    const duration = 2000;
+    const start = performance.now();
+    const animate = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(eased * target);
+      el.innerHTML = current.toLocaleString() + `<span style="font-size:1rem">${suffix}</span>`;
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+    countObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+countElements.forEach(el => countObserver.observe(el));
+
+// ===== Product Data =====
+const products = {
+  epoxy: [
+    { name:'经济型环氧树脂地坪漆', tags:['经济实用','应用广泛'], icon:'🎨' },
+    { name:'砂浆型环氧树脂地坪', tags:['高强度','耐磨'], icon:'🧱' },
+    { name:'自流平型环氧树脂地坪', tags:['无缝','平整'], icon:'💧' },
+    { name:'哑光型环氧树脂地坪', tags:['哑光','防眩光'], icon:'🌑' },
+    { name:'防滑型环氧树脂地坪', tags:['安全防滑','高摩擦'], icon:'✋' },
+    { name:'防腐型环氧树脂地坪', tags:['耐酸碱','化工厂专用'], icon:'🧪' },
+    { name:'防静电型环氧树脂自流平地坪', tags:['电子厂','防静电'], icon:'⚡' },
+    { name:'水性环保型环氧树脂地坪', tags:['零VOC','环保'], icon:'💚' },
+    { name:'无溶剂彩砂型环氧树脂自流平', tags:['高端装饰','无缝'], icon:'✨' },
+    { name:'环氧超耐磨微珠地坪', tags:['超耐磨','高流量'], icon:'💎' },
+    { name:'乙烯基重防腐地坪', tags:['强酸强碱','重防腐'], icon:'🛡️' },
+  ],
+  sports: [
+    { name:'硅PU球场', tags:['弹性好','运动舒适'], icon:'🏀' },
+    { name:'丙烯酸球场材料', tags:['色彩鲜艳','耐候'], icon:'🎾' },
+    { name:'透气型塑胶跑道', tags:['透气排水','经济型'], icon:'🏃' },
+    { name:'复合型塑胶跑道', tags:['性价比高','通用'], icon:'🏟️' },
+    { name:'混合型塑胶跑道', tags:['弹性好','竞赛级'], icon:'🥇' },
+    { name:'全塑型塑胶跑道', tags:['顶级性能','专业赛场'], icon:'🏆' },
+    { name:'预制型塑胶跑道', tags:['工厂预制','快速安装'], icon:'📦' },
+    { name:'自结纹型塑胶跑道', tags:['纹理自然','高颜值'], icon:'🌀' },
+    { name:'EPDM运动场地', tags:['幼儿园','多彩安全'], icon:'🎪' },
+  ],
+  pu: [
+    { name:'防静电聚氨酯超耐磨', tags:['电子车间','防静电'], icon:'⚡' },
+    { name:'聚氨酯超耐磨', tags:['高流量','超耐磨'], icon:'💪' },
+    { name:'聚脲聚氨酯地坪', tags:['快速固化','防水'], icon:'🌊' },
+    { name:'水性聚氨酯超耐磨', tags:['环保','低气味'], icon:'💧' },
+    { name:'透明聚氨酯超耐磨', tags:['保留原色','透明罩面'], icon:'🔍' },
+  ],
+  outdoor: [
+    { name:'彩色陶瓷颗粒防滑路面', tags:['网红公路','景观路面'], icon:'🛣️' },
+    { name:'聚氨酯丙烯酸', tags:['沥青改色','彩钢瓦翻新'], icon:'🎨' },
+  ],
+  hardener: [
+    { name:'混凝土密封固化剂', tags:['硬化地坪','防尘'], icon:'🔒' },
+    { name:'金刚砂耐磨地坪', tags:['重载','高耐磨'], icon:'⛏️' },
+  ],
+  garage: [
+    { name:'无振动防滑车道', tags:['车库坡道','防滑'], icon:'🚗' },
+  ],
+};
+
+const productGrid = document.getElementById('productGrid');
+const productTabs = document.getElementById('productTabs');
+
+function renderProducts(cat) {
+  const items = products[cat] || [];
+  productGrid.innerHTML = items.map(p => `
+    <div class="product-card" style="animation: fadeInUp 0.4s ease both;">
+      <div class="icon">${p.icon}</div>
+      <div class="name">${p.name}</div>
+      <div class="tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+    </div>
+  `).join('');
+}
+
+productTabs.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('product-tab')) return;
+  productTabs.querySelectorAll('.product-tab').forEach(t => t.classList.remove('active'));
+  e.target.classList.add('active');
+  renderProducts(e.target.dataset.cat);
+});
+
+renderProducts('epoxy');
+
+// ===== Case Data =====
+const cases = [
+  { title:'山东聊城万达广场地下车库', cat:'garage', craft:'环氧砂浆平涂 + 聚氨酯超耐磨', area:'60,000 ㎡', icon:'🏬' },
+  { title:'杭州保时捷中心地下车库', cat:'garage', craft:'环氧自流平 + 聚氨酯超耐磨罩面', area:'10,000 ㎡', icon:'🏎️' },
+  { title:'济南龙湖春江郦城地下车库', cat:'garage', craft:'砂浆 + 水性聚氨酯罩面', area:'100,000 ㎡', icon:'🏘️' },
+  { title:'济南绿地中央公馆地下车库', cat:'garage', craft:'环氧砂浆平涂 + 聚氨酯超耐磨', area:'30,000 ㎡', icon:'🏢' },
+  { title:'长沙 IFS 国际金融中心 VIP 通道', cat:'outdoor', craft:'彩砂陶瓷颗粒防滑路面', area:'5,000 ㎡', icon:'🌟' },
+  { title:'新疆独库公路（网红公路）', cat:'outdoor', craft:'彩色陶瓷颗粒防滑路面', area:'道路级', icon:'🏔️' },
+  { title:'海宁开元大酒店地下车库', cat:'garage', craft:'环氧自流平 + 橘纹拉毛', area:'38,000 ㎡', icon:'🏨' },
+  { title:'江苏丰盈科技电子厂', cat:'industrial', craft:'防静电自流平 + 防静电聚氨酯', area:'35,000 ㎡', icon:'🏭' },
+  { title:'济南明珠小学操场', cat:'sports', craft:'混合型跑道 + 硅PU篮球场', area:'新国标', icon:'🏫' },
+  { title:'常德郡德学校跑道', cat:'sports', craft:'全塑型自结纹塑胶跑道 + 硅PU球场', area:'校园级', icon:'🎓' },
+  { title:'邵阳电子厂自流平项目', cat:'industrial', craft:'自流平型环氧树脂地坪', area:'10,000 ㎡', icon:'⚙️' },
+  { title:'湖南岳阳正味佳食品厂', cat:'industrial', craft:'自流平环氧树脂地坪', area:'8,000 ㎡', icon:'🍔' },
+  { title:'莱西人民医院', cat:'garage', craft:'环氧砂浆平涂', area:'10,000 ㎡', icon:'🏥' },
+  { title:'红星美凯龙家具城', cat:'garage', craft:'自流平型环氧树脂地坪', area:'10,000 ㎡', icon:'🛋️' },
+  { title:'南京金龙客车制造', cat:'industrial', craft:'混凝土密封固化剂 + 环氧自流平', area:'工厂级', icon:'🚌' },
+  { title:'青海环湖赛赛道乐都站', cat:'outdoor', craft:'彩色陶瓷颗粒防滑路面', area:'赛道级', icon:'🚴' },
+];
+
+const caseGrid = document.getElementById('caseGrid');
+const caseFilters = document.getElementById('caseFilters');
+
+function renderCases(cat) {
+  const filtered = cat === 'all' ? cases : cases.filter(c => c.cat === cat);
+  caseGrid.innerHTML = filtered.map(c => `
+    <div class="case-card" style="animation: fadeInUp 0.4s ease both;">
+      <div class="case-thumb">${c.icon}</div>
+      <div class="case-info">
+        <div class="title">${c.title}</div>
+        <div class="meta">
+          <span>🔧 ${c.craft}</span>
+          <span>📐 ${c.area}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+caseFilters.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('case-filter')) return;
+  caseFilters.querySelectorAll('.case-filter').forEach(f => f.classList.remove('active'));
+  e.target.classList.add('active');
+  renderCases(e.target.dataset.cat);
+});
+
+renderCases('all');
+
+// ===== FAQ Data =====
+const faqs = [
+  { q:'环氧地坪使用年限是多久？如何养护？', a:'环氧地坪使用年限跟使用环境和地坪厚度有关。一般1mm厚环氧地坪可使用5-8年，3mm以上可达10-15年。日常养护建议：避免重物撞击、定期清洁、及时修补小面积损伤，避免长期积水浸泡。' },
+  { q:'地坪涂料施工前需要做哪些准备？', a:'施工前需做好墙裙及其他设施的保护工作，避免交叉施工。地面需干燥、平整、无油污，含水率需低于8%。如在地坪施工在墙面施工之后，需做好成品保护，避免涂料溅到墙面。' },
+  { q:'如何避免环氧地坪形成缩孔？', a:'缩孔主要由底材污染或涂料表面张力不均导致。解决方案：1）施工前彻底清洁基面；2）使用消泡滚筒减少气泡；3）控制施工环境温湿度；4）选择品质可靠的环氧地坪材料。' },
+  { q:'固化地坪和耐磨地坪有什么区别？', a:'固化地坪是通过混凝土密封固化剂渗透到混凝土内部发生化学反应，提升地面硬度和密实度；耐磨地坪则是在混凝土表面形成一层硬化层。固化地坪不起尘、寿命更长，适合工厂车间；金刚砂耐磨地坪表面硬度更高，适合重载环境。' },
+  { q:'地坪地面出问题，责任如何判定？', a:'地坪问题通常由三方面引起：材料质量、施工工艺、使用维护。正规厂家会提供完整的材料检测报告和施工指导。建议选择有资质的专业施工团队，并严格按施工方案执行。我司提供全程技术支持，从源头减少质量问题。' },
+  { q:'运动球场塑胶跑道有哪些类型？如何选择？', a:'常见类型包括透气型（经济实用）、复合型（性价比高）、混合型（弹性好）、全塑型（竞赛级）、预制型（快速安装）、自结纹型（纹理美观）。学校操场推荐混合型或透气型，专业赛场推荐全塑型，幼儿园推荐EPDM。可联系我们获取一对一选型建议。' },
+];
+
+const faqList = document.getElementById('faqList');
+faqList.innerHTML = faqs.map((f, i) => `
+  <div class="faq-item${i === 0 ? ' open' : ''}">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+      <span>${f.q}</span>
+      <span class="arrow">+</span>
+    </div>
+    <div class="faq-a"><p>${f.a}</p></div>
+  </div>
+`).join('');
+
+// ===== Certifications =====
+const certs = [
+  { title:'中国地坪行业品牌20强', icon:'🏅' },
+  { title:'中国建筑装饰行业品牌10强', icon:'🏆' },
+  { title:'江苏省高新技术企业', icon:'🔬' },
+  { title:'建筑装饰装修二级资质', icon:'📋' },
+  { title:'市政工程三级资质', icon:'🏗️' },
+  { title:'安全生产许可证', icon:'🛡️' },
+  { title:'绿色环保产品认证', icon:'🌿' },
+  { title:'进出口贸易资质', icon:'🌍' },
+  { title:'ISO质量管理体系', icon:'✅' },
+  { title:'江苏优秀地坪施工商十强', icon:'⭐' },
+];
+
+document.getElementById('certScroll').innerHTML = certs.map(c => `
+  <div class="cert-item">
+    <div class="icon">${c.icon}</div>
+    <div class="title">${c.title}</div>
+  </div>
+`).join('');
+
+// ===== Offices =====
+const offices = [
+  { city:'常州 · 营销总部', addr:'新北区太湖西路88号万慧科创园C座401', tel:'0519-89187058' },
+  { city:'湖北 · 生产工厂', addr:'石首市金平工业园区康庄大道南侧127号', tel:'400-8898-733' },
+  { city:'长沙 · 华中运营中心', addr:'长沙县星大花园906室', tel:'13301503998' },
+  { city:'兰州 · 西北运营中心', addr:'城关区南关十字世纪广场A座2103', tel:'15101268104' },
+  { city:'武汉 · 湖北办事处', addr:'武昌区星海路鸿玺公馆2栋2408', tel:'13657287013' },
+  { city:'济南 · 山东办事处', addr:'天桥区无影山中路美林大厦东塔1709', tel:'18866879902' },
+  { city:'郑州 · 河南办事处', addr:'管城区郑东家具城D区7栋10-11号', tel:'13525561539' },
+];
+
+document.getElementById('officeGrid').innerHTML = offices.map(o => `
+  <div class="office-card">
+    <div class="city">📍 ${o.city}</div>
+    <div class="addr">${o.addr}</div>
+    <div class="tel">📞 ${o.tel}</div>
+  </div>
+`).join('');
+
+// ===== Contact Form =====
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  const orig = btn.textContent;
+  btn.textContent = '✓ 提交成功！我们将在24小时内联系您';
+  btn.style.background = 'var(--green)';
+  setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 3000);
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
